@@ -57,7 +57,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ autosuggestionFilterUrl }) 
     return (
         <form className="autocomplete-form" aria-label="Search Form">
             <div className="autocomplete-input-section">
-                <input ref={inputRef} value={searchVal} onChange={searchInput} className="autocomplete-input" placeholder="Search country suggestions..." aria-label="Search for suggestions" />
+                <input type="text" ref={inputRef} value={searchVal} onChange={searchInput} className="autocomplete-input" placeholder="Search country suggestions..." aria-label="Search for suggestions" />
             </div>
             {(suggestionData.length > 0 || loading) &&
                 <ul className="autocomplete-list" role="listbox" aria-label="Suggestions">
