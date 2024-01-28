@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from './assets/images/logo.svg';
+import Autocomplete from './components/Autocomplete';
+import { useSuggestions } from './hooks/useSuggestions';
 
 function App() {
+
+  const apiUrl = `https://manjari188.github.io/AutocompleteJSON/autocomplete.json`;
+
+  const { searchVal, suggestionData, error, handleInputChange, loading } = useSuggestions(apiUrl);
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <a className='App-header-logo'><img alt="Logo" src={logo}></img></a>
       </header>
+      <Autocomplete error={error} loading={loading} searchVal={searchVal} handleInputChange={handleInputChange} suggestionData={suggestionData}></Autocomplete>
     </div>
   );
 }
