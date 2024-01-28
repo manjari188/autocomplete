@@ -56,9 +56,8 @@ describe('Autocomplete Component', () => {
 
 })
 
-describe('Autocomplete component Loading', () => {
-
-    it('render autocomplete loading', () => {
+describe('Autocomplete component rendering', () => {
+    it('renders loading', () => {
         jest.spyOn(useSuggestionsModule, "useSuggestions").mockReturnValue({
             searchVal: 'UK',
             suggestionData: [],
@@ -71,11 +70,8 @@ describe('Autocomplete component Loading', () => {
         const loadingMessage = screen.getByText('Loading...');
         expect(loadingMessage).toBeInTheDocument();
     })
-})
 
-describe('Autocomplete component Loading', () => {
-
-    it('render autocomplete loading', () => {
+    it('renders error', () => {
         jest.spyOn(useSuggestionsModule, "useSuggestions").mockReturnValue({
             searchVal: 'UK',
             suggestionData: [],
@@ -88,4 +84,4 @@ describe('Autocomplete component Loading', () => {
         const errorMessage = screen.getByText('Error message');
         expect(errorMessage).toBeInTheDocument();
     })
-})
+});

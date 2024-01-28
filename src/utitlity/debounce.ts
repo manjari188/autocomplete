@@ -10,4 +10,4 @@ export const debounce = (func: Function) => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => func(), API_DEBOUNCE_TIME);
     };
-  }
+}

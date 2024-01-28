@@ -25,4 +25,4 @@ describe('useSuggestion hook', () => {
         expect(result.current.searchVal).toBe('UK');
         expect(result.current.loading).toBe(true);
     })
-})
+});

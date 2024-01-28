@@ -8,4 +8,4 @@ module.exports = {
     testPathIgnorePatterns: ['<rootDir>/node_modules/'],
     coverageReporters: ['lcov', 'text', 'html'],
     collectCoverageFrom: ['src/**/*.{ts,tsx}', '!<rootDir>/node_modules/']
-  };
+};

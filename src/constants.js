@@ -5,4 +5,4 @@ export const API_DEBOUNCE_TIME = 300;
 export const SUGGESTIONS_API = 'https://manjari188.github.io/AutocompleteJSON/autocomplete.json';
 
 // Text to showcase when no match founded in API result
-export const NO_MATCH = 'Sorry! No matching country found'
+export const NO_MATCH = 'Sorry! No matching country found';
