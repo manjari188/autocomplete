@@ -1,6 +1,5 @@
 import { renderHook, act } from '@testing-library/react';
 import { useSuggestions } from '../hooks/useSuggestions';
-import { Suggestion } from '../types/suggestion';
 
 
 describe('useSuggestion hook', () => {
