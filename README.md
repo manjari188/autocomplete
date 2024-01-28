@@ -1,6 +1,7 @@
 # Autocomplete
 
-- Shows suggested values in dropdown on the basis of Value typed in Input
+Shows suggested values in dropdown on the basis of Value typed in Input
+
 ![AutocompleteDemo](https://github.com/manjari188/autocomplete/assets/19758555/272603d0-8c54-4ec0-9aea-b4832e51820c)
 
 ## Installation
